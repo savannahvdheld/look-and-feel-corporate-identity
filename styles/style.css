@@ -147,6 +147,7 @@ p{
    font-family: "TASAOrbiter", sans-serif; 
     color:var( --base-bleached-silk);
 }
+
 /* HEADER */
 header{
 top:0;
@@ -186,98 +187,24 @@ background-color:var(  --base-night-rider); ;
   }
 
 
-.dashboard ul {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  gap: 1em;
-  border-radius: 8px;
-  margin: 3%;
-  padding: 5%;
-  list-style: none;
 
-
- @media (min-width:900px) {
-  background: var(--d900-night-rider);
-  } 
-  /* BOVENSTE NAV*/
-    a {
-      display: block;
-      padding: 1em;
-      text-align: center;
-      text-decoration: none;
-      color: #322f2f;
-      font-size: 1.5em;
-      border-radius: 8px;
-      box-shadow: 0px 6px 0px var(--d700-night-rider);
-      color: var(--base-bleached-silk);
-      
-    }
-    
-    a:hover {
-      box-shadow: none;
-    }
-    
-    li {
-      background: var(--d600-lustful-wishes);
-      flex-grow: 1;
-      border-radius: 8px;
-      
-    }
-    
-    li:nth-of-type(2) {
-      background: var(--d600-cockatoo);
-      border-radius: 8px;
-      
-      
-    }
-    
-    li:nth-of-type(3) {
-      background: var(--d600-xavier-blue);
-      border-radius: 8px;
-    }
-
-}
-/* RECOMMENDED TEXT STYLING */
-.recommended_text{
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  /* grid-template-rows: 1fr 1fr 1fr; /*3 kollomen die verticaal staan*/ 
-  margin: 0;
-
-h2{
-  font-weight: 600;
-  
-  
-}
-p{
-  grid-row:2;
-}
+.Logo_Pediaconnect {
+  width: 50px;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 10px;
 }
 
-/* FILTERBUTTON EN REFRESHBUTTON STYLING */
-.filterbuttons{
-  display: grid;
-  grid-template-columns: 1fr 1fr 6fr;
-
-.refresh{
-background-color: transparent;
-border:none;
-justify-self: left;
-}
-  .filterknop{
-    border-radius:8px;
-    border:none;
-    background-color: var(--l900-night-rider);
-    
-    &:hover{
-    background-color: var(--base-night-rider);
-    color: var(--base-bleached-silk)
-
-    }
-  } 
-   }
+.HamburgerMenu {
+  width: 20px;
+  grid-column:3;
+  background-color: transparent;
+  color:var( --base-bleached-silk);
+  grid-row:1;
+  justify-items: center;
+  margin-top: 29px;
+  border:none;
+  }
 /* FOOTER */
 footer{
   bottom:0;
