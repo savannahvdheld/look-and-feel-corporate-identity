@@ -185,9 +185,6 @@ background-color:var(  --base-night-rider); ;
   margin-top: 29px;
   border:none;
   }
-
-
-
 .Logo_Pediaconnect {
   width: 50px;
   justify-content: center;
@@ -205,6 +202,19 @@ background-color:var(  --base-night-rider); ;
   margin-top: 29px;
   border:none;
   }
+
+/* STYLING PAGINA */
+main{
+
+}
+.settingsnav{
+  ul{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  li{
+    list-style: none;
+  }
+}
 /* FOOTER */
 footer{
   bottom:0;
