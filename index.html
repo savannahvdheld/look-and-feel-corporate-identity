@@ -4,7 +4,6 @@
 <html lang="en">
 <body>
     
-
 <head>
      <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +16,8 @@
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap"
                 rel="stylesheet">
+                <link rel="stylesheet" href="https://github.com/toonicwesley/look-and-feel-styleguide/styleguide.css">
+                
 </head>
 <!--HEADER-->
     <header>
@@ -27,11 +28,40 @@
   </article>
 </header>
 
+<main>
+    <!--BOVENSTE NAV KNOPPEN-->
+    <section class="dashboard">
+            <ul>
+                <li><a href="Colleagues.html">Find Colleagues</a> </li>
+                <li><a href="Oppertunities.html">Browse Projects</a></li>
+                <li><a href="Events.html">Events & Conventions</a></li>
+            </ul>
+    </section>
+
+<!-- MAIN -->
+    <main>
+    <section class="recommended_text">
+        <h2>Recommended for you</h2>
+        <p>Projects, questions and colleagues selected based on your preferences</p>
+    </section>
+        
+    <section class="filterbuttons">
+    <select class="filterknop" aria-label="filterknop">
+    <option>Show all content</option>
+    <option>Colleagues</option>
+    <option>Oppertunities</option>
+    <option>Open questions</option>
+    <option>Events</option>
+    </select>
+    
+     <button class="refresh" aria-label="refresh"><img src="assets/refresh icon_default.svg" alt="" ></button>
+    </section>
+    </main>
 <!-- FOOTER -->
     <footer>
-            <button aria-label="Dashboard"><img src="nav icons ingekleurt/home button_ingekleurt.svg" alt=""></button>
-            <button aria-label="Your Profile"><img src="nav icons/profile icon_default.svg" alt=""></button>
-            <button aria-label="Notifications"><img src="nav icons/notification_default icon.svg" alt=""></button>
+            <button aria-label="Dashboard"><img src="assets/home button_ingekleurt.svg" alt=""></button>
+            <button aria-label="Your Profile"><img src= "assets/profile icon_default.svg" alt=""></button>
+            <button aria-label="Notifications"><img src="assets/notification_default icon.svg" alt=""></button>
             </section>
     </footer>
 </body>
