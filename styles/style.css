@@ -153,15 +153,15 @@ header{
 top:0;
 position:sticky;
 z-index: 10;
-background-color:var(  --base-night-rider); ;
+background-color:var( --d900-bleached-silk); ;
 }
+
 /* HEADER STYLING */
 .nav {
   display: grid;
   justify-items: center;
   position: sticky;
   grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 1fr 1fr;
   padding: 5px;
 
   h2{
@@ -208,13 +208,26 @@ main{
 
 }
 .settingsnav{
-  ul{
+    display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-  }
-  li{
+    
+    li{
     list-style: none;
+    justify-self: center;
+  }
+  }
+
+.Account_Settings{
+  display: grid;
+  grid-template-rows: 5fr 5fr 5fr;
+  grid-template-columns: 1fr 1fr;
+
+
+  li{
+  list-style: none;
   }
 }
+
 /* FOOTER */
 footer{
   bottom:0;
