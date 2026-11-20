@@ -227,7 +227,7 @@ padding: 1em;
 
 .Account_Settings{
   display: grid;
-  grid-template-rows: 5fr 5fr 5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 
 
