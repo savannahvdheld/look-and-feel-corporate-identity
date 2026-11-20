@@ -214,7 +214,7 @@ padding: 1em;
     li{
     list-style: none;
     justify-self: center;
-    color: var(--l900-bleached-silk);
+    color: var(--base-bleached-silk);
   }
   }
 
@@ -227,11 +227,19 @@ padding: 1em;
   li{
   list-style: none;
   color: var(--l900-bleached-silk);
+
+    li:nth-of-type(2) {
+    padding: 5px;
+    }
+
+   li:nth-of-type(3) {
+    padding: 5px;
+    }
   }
 }
 
-/* STYLING DROPDOWN MENU CHECKLIST */
-.dropdown {
+/* STYLING DROPDOWN MENU CHECKLIST. Dit komt te staan in Preferences */
+/* .dropdown {
   font-family: Arial, sans-serif;
   width: 250px;
   margin: 20px;
@@ -258,7 +266,7 @@ padding: 1em;
 }
 
 /* Dit zorgt ervoor dat de checklist een lijstje wordt. */
-.dropdown-content label {
+/* .dropdown-content label {
   display: block;
   padding: 8px 10px;
   cursor: pointer;
@@ -275,14 +283,17 @@ padding: 1em;
   border-radius: 4px;
   background: var(--base-cockatoo);
 }
-}
+}  */
 
 
  /* MARK: toggle */
+ fieldset{
+  border:none;
+ }
    .toggle-pill {
       appearance: none;
       font: inherit;
-      background-color: var(--l700-night-rider);
+      background-color: var(--l700-night-rider);  /* Grijs. Achtergrond kleur voordat erop geklikt wordt */
       width: 5em;
       height: 2em;
       margin: 0;
@@ -290,47 +301,28 @@ padding: 1em;
       cursor: pointer;
       transition: 0.5s;
 
+    /* Dit is de knop waar de gebruiker op moet klikken om de knop te activeren */
       &::after {
          content: "";
          display: block;
          width: 3em;
          height: 2em;
          scale: .8;
-         background-color: var(--white);
+         background-color: white;
          border-radius: inherit;
          transition: 0.5s;
-         box-shadow: 0px 3px 5px var(--base-bleached-silk);
+         box-shadow: 0px 3px 5px var(--base-bleached-silk); /* Grijze schaduw onderaan de klikbare knop. */
       }
-
+    /* Dit is de kleur waar de knop in veranderd als de gebruiker de knop activeert. */
       &:checked {
-         background-color: var(--background-green);
+         background-color: var(--base-cockatoo);
       }
 
       &:checked::after {
          translate: 2em;
       }
    }
-
-   input[type="checkbox"].checkbox-1 {
-      appearance: none;
-      border: 1px solid var(--base-eclipse);
-      border-radius: 4px;
-      cursor: pointer;
-      height: 1.2rem;
-      position: relative;
-      width: 1.2rem;
-
-      &:checked::before {
-         background: var(--d700-bleached-silk);
-         border-radius: 2px;
-         content: "";
-         inset: 15%;
-         pointer-events: none;
-         position: absolute;
-         z-index: 1;
-      }
-   }
-}
+  }
 
 
 /* FOOTER */
