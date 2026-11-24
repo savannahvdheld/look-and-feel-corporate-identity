@@ -209,7 +209,7 @@ border-top-right-radius: 20px;
 main{
 padding: 1em;
 
-.settingsnav{
+nav{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     
