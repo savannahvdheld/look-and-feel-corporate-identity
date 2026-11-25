@@ -231,7 +231,19 @@ nav{
       box-shadow: none;
     }
   }
+
+  &.settings{
+    &:not(:has(tab-section-target)) #account_settings{
+      display: block;
+    }
   }
+  }
+    /* Dit zorgt ervoor dat de hover kleur boven de tekst highlight waar de gebruiker op klikt */
+    &:has(#account_settings:target) a[href="#account_settings"],
+    &:has(#privacy:target) a[href="#privacy"],
+    &:has(#preferences:target) a[href="#preferences"] {
+      box-shadow: 0px -5px 0px var(--l600-night-rider);
+    }
 }
 
 .Account_Settings{
@@ -254,6 +266,10 @@ nav{
       justify-content: space-between;
       flex-direction:row-reverse;
       /* background-color: red; */
+
+      stroke{
+        background-color: red;
+      }
     }
   }
 }
@@ -340,7 +356,13 @@ nav{
       }
    }
 
-
+.tabsectie{
+  display: none;
+  
+  &:target{
+    display: block;
+  }
+}
 /* FOOTER */
 footer{
   bottom:0;
