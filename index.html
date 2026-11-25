@@ -38,7 +38,7 @@
     <li><a href="#preferences">Preferences</a></li>
 </nav>
 
-<ul class="Account_Settings" id="account_settings">
+<ul class="Account_Settings" id="tabsectie">
   <!-- LOCATION SHARING TAB -->
   <li>
       <label class=""><input class="toggle-pill" type="checkbox" name="checkbox-switch"> <h4>Location sharing</h4></label>
@@ -95,8 +95,27 @@
 </ul>
 
 <ul class="tabsectie" id="privacy">
-<li>bla</li>
-<li>bla</li>
+      <fieldset class="divider">
+        <legend>Change email address</legend>
+        <p>
+          Your email address is used to keep your account accesible over time.
+          if your institutional email expires, your personal email ensures
+          continued acces to your data and connections.
+        </p>
+        <p>Current email addresses:</p>
+        <p>
+          <a href="emailto:janedoe@email.com" class="button-plain">janedoe@email.com</a> &amp; <a href="emailto:janedoe@work-email.com" class="button-plain">janedoe@work-email.com</a>
+        </p>
+        <label>
+          New personal email:
+          <input type="email" name="personal-email" placeholder="Type new personal email">
+        </label>
+        <label>
+          New institunional email:
+          <input type="email" name="personal-email" placeholder="Type new institutional email">
+        </label>
+      </fieldset>
+
 </ul>
 
 <ul class="tabsectie" id="preferences">
@@ -104,7 +123,7 @@
 <li>bloe</li>
 </ul>
 
- <!-- <div class="dropdown">
+ <div class="dropdown">
     <button class="dropdown-btn">I'm new to research ▼</button>
     <div class="dropdown-content">
       <label><input type="checkbox" value="optie1"> Im working on an ongoing project</label>
@@ -114,7 +133,7 @@
     </div>
     
     <div class="selected-options">Geen opties geselecteerd.</div>
-  </div> -->
+  </div>
 
 </main>
 <!-- FOOTER -->

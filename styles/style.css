@@ -225,12 +225,13 @@ nav{
     list-style: none;
     justify-self: center;
     color:var( --d200-bleached-silk);
-    box-shadow: 0px -5px 0px var(--l700-night-rider);
+    box-shadow: 0px -5px 0px var(--l400-night-rider);
     
     &:hover{
       box-shadow: none;
     }
   }
+  /* STYLING SETTINGS klik baarheid*/
 
   &.settings{
     &:not(:has(tab-section-target)) #account_settings{
@@ -242,7 +243,7 @@ nav{
     &:has(#account_settings:target) a[href="#account_settings"],
     &:has(#privacy:target) a[href="#privacy"],
     &:has(#preferences:target) a[href="#preferences"] {
-      box-shadow: 0px -5px 0px var(--l600-night-rider);
+      box-shadow: 0px -5px 0px var(--l800-night-rider);
     }
 }
 
@@ -274,52 +275,6 @@ nav{
   }
 }
 
-/* STYLING DROPDOWN MENU CHECKLIST. Dit komt te staan in Preferences */
-/* .dropdown {
-  font-family: Arial, sans-serif;
-  width: 250px;
-  margin: 20px;
-  
-.dropdown-btn {
-  background: #f0f0f0;
-  border: 1px solid #ccc;
-  padding: 10px;
-  width: 100%;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.dropdown-content {
-  display: none;
-  border: 1px solid;
-  border-radius: 4px;
-  margin-top: 5px;
-  background: white;
-}
-
-.dropdown-content.show {
-  display: block;
-}
-
-/* Dit zorgt ervoor dat de checklist een lijstje wordt. */
-/* .dropdown-content label {
-  display: block;
-  padding: 8px 10px;
-  cursor: pointer;
-}
-
-.dropdown-content label:hover {
-  background: #f5f5f5;
-}
-
-.selected-options {
-  margin-top: 10px;
-  padding: 10px;
-  border: 1px;
-  border-radius: 4px;
-  background: var(--base-cockatoo);
-}
-}  */
 
 
   /* TOGGLE KNOP STYLING*/
@@ -363,6 +318,54 @@ nav{
     display: block;
   }
 }
+#preferences{
+/* STYLING DROPDOWN MENU CHECKLIST. Dit komt te staan in Preferences */
+.dropdown {
+  font-family: Arial, sans-serif;
+  width: 250px;
+  margin: 20px;
+  
+.dropdown-btn {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.dropdown-content {
+  display: none;
+  border: 1px solid;
+  border-radius: 4px;
+  margin-top: 5px;
+  background: white;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+/* Dit zorgt ervoor dat de checklist een lijstje wordt. */
+/* /* .dropdown-content label { */
+  display: block;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+.dropdown-content label:hover {
+  background: #f5f5f5;
+}
+.selected-options {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px;
+  border-radius: 4px;
+  background: var(--base-cockatoo);
+}
+} 
+
+
+
 /* FOOTER */
 footer{
   bottom:0;
