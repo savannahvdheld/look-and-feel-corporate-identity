@@ -233,6 +233,7 @@ nav{
   }
   }
 }
+
 .Account_Settings{
   /* display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -241,7 +242,6 @@ nav{
   padding:0;
   margin:0;
   list-style: none;
-
 
   li{
     display:flex;
@@ -305,9 +305,6 @@ nav{
 }
 }  */
 
- fieldset{
-  border:none;
- }
 
   /* TOGGLE KNOP STYLING*/
    .toggle-pill {
