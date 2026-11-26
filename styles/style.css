@@ -232,7 +232,6 @@ nav{
     }
   }
   /* STYLING SETTINGS klik baarheid*/
-
   &.settings{
     &:not(:has(tab-section-target)) #account_settings{
       display: block;
@@ -260,6 +259,8 @@ nav{
     display:flex;
     flex-wrap:wrap;
 
+    stroke: var(  --base-bleached-silk);
+
     label {
       flex-basis:100%;
       display:flex;
@@ -267,13 +268,10 @@ nav{
       justify-content: space-between;
       flex-direction:row-reverse;
       /* background-color: red; */
-
-      stroke{
-        background-color: red;
       }
     }
   }
-}
+
 
 
 
@@ -320,13 +318,16 @@ nav{
 }
 #preferences{
 /* STYLING DROPDOWN MENU CHECKLIST. Dit komt te staan in Preferences */
+
+div{
+  
+}
 .dropdown {
   font-family: Arial, sans-serif;
   width: 250px;
   margin: 20px;
   
 .dropdown-btn {
-  background: #f0f0f0;
   border: 1px solid #ccc;
   padding: 10px;
   width: 100%;
@@ -339,7 +340,6 @@ nav{
   border: 1px solid;
   border-radius: 4px;
   margin-top: 5px;
-  background: white;
 }
 
 .dropdown-content.show {
