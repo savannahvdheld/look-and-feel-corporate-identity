@@ -320,7 +320,7 @@ nav{
 /* STYLING DROPDOWN MENU CHECKLIST. Dit komt te staan in Preferences */
 
 div{
-  
+ margin:0; 
 }
 .dropdown {
   font-family: Arial, sans-serif;
@@ -362,8 +362,9 @@ div{
   border-radius: 4px;
   background: var(--base-cockatoo);
 }
-} 
 
+}
+ 
 
 
 /* FOOTER */
