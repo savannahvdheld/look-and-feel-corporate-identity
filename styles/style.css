@@ -131,7 +131,7 @@
 }
 
 body {
-   background-color: var( --d800-bleached-silk);  /*Darkmode*/
+   background-color: var(--site-background-darkmode);  /*Darkmode*/
 }
 /* FONT TEXT STYLING */
 h1,
@@ -372,7 +372,7 @@ footer{
   bottom:0;
   position:sticky;
   z-index: 10;
-  background-color:var( --d900-bleached-silk);
+  background-color:var(--footer-background-darkmode);
   
 
   padding: 25px;
